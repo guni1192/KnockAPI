@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.guni.knockapi.MainActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request URL"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.06"
+            app:layout_constraintHorizontal_bias="0.162"
+            android:id="@+id/textViewUrl"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewTime"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="Exec time: " app:layout_constraintHorizontal_bias="0.098"
+            app:layout_constraintVertical_bias="0.967"/>
+    <Button
+            android:text="Get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/buttonGet"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.498" android:onClick="onButtonGet"/>
+    <EditText
+            android:layout_width="246dp"
+            android:layout_height="84dp"
+            android:inputType="textMultiLine"
+            android:text="result Request"
+            android:ems="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/editTextResponse" app:layout_constraintVertical_bias="0.737"
+    />
+    <EditText
+            android:layout_width="246dp"
+            android:layout_height="84dp"
+            android:text="request URL"
+            android:ems="10"
+            android:id="@+id/editTextUrl"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:inputType="textUri" app:layout_constraintVertical_bias="0.271"
+    />
+
+</android.support.constraint.ConstraintLayout>
